@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/logout"
+            android:layout_gravity="end"
+            android:textColor="#9CD31111"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            tools:ignore="RtlCompat" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="149dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/account"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/mail"
+            android:layout_gravity="center"
+            android:text="something@gmail.com"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:text="1234567890"
+            tools:ignore="RtlCompat" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:gravity="center"
+                android:textColor="@color/tabcolor"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        >
+        <TextView
+            android:id="@+id/favourites"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/favorite"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="140dp"
+            android:drawableTint="@color/purple_200"
+            android:textColor="#4E4C4C"
+            android:text="My Favourites" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="500dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/favourites"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="2dp"
+            android:background="#cfcfcf" />
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/favourites"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/order"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="#4E4C4C"
+            android:paddingTop="1dp"
+            android:paddingRight="140dp"
+            android:text="Booking History"
+            android:textSize="25sp" />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="500dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/order"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="2dp"
+            android:background="#cfcfcf" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

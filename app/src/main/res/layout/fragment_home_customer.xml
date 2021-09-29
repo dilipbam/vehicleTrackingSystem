@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragmentCustomer">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Select the vehicle type for booking"
+    android:layout_marginTop="15dp"
+    android:textSize="20sp"
+    />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+        <RadioButton
+            android:id="@+id/rdoSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 Wheeler"/>
+        <RadioButton
+            android:id="@+id/rdoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 Wheeler"/>
+        <RadioButton
+            android:id="@+id/rdoTwe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 Wheeler"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:text="Search"
+        android:textColor="@color/tabcolor" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="150dp"
+        android:text="Continue"
+        android:textColor="@color/tabcolor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="270dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+</FrameLayout>
